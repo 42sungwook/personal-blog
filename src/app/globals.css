@@ -1,0 +1,15 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+html {
+  background-color: #c5fcff;
+  width: 100%;
+  height: 100%;
+}
+
+html.dark {
+  background-color: #003d40;
+  width: 100%;
+  height: 100%;
+}

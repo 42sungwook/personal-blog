@@ -1,6 +1,8 @@
 'use client'
 
 import { useTheme } from 'next-themes'
+import LightThemeButton from '../assets/sun.svg'
+import DarkThemeButton from '../assets/moon.svg'
 import { useEffect, useState } from 'react'
 
 export function ThemeSwitcher() {
@@ -11,13 +13,30 @@ export function ThemeSwitcher() {
     setMounted(true)
   }, [])
 
+  const handleThemeChange = () => {
+    if (theme === 'light') setTheme('dark')
+    else setTheme('light')
+  }
+
   if (!mounted) return null
 
   return (
-    <div>
-      The current theme is: {theme}
-      <button onClick={() => setTheme('light')}>Light Mode</button>
-      <button onClick={() => setTheme('dark')}>Dark Mode</button>
+    <div
+      className="bg-none"
+      onClick={handleThemeChange}
+    >
+      {theme === 'light' ? (
+        <LightThemeButton
+          width={30}
+          height={30}
+        />
+      ) : (
+        <DarkThemeButton
+          width={30}
+          height={30}
+          fill="white"
+        />
+      )}
     </div>
   )
 }

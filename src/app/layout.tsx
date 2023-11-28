@@ -1,8 +1,7 @@
-import './globalLight.css'
-import './globalDark.css'
+import './globals.css'
 import NextThemeProvider from '../providers/NextThemeProvider'
-import { ThemeSwitcher } from '../components/ThemeSwitcher'
 import type { Metadata } from 'next'
+import MainLayout from '../components/MainLayout'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -18,8 +17,7 @@ export default function RootLayout({
     <html lang="ko">
       <body>
         <NextThemeProvider>
-          <ThemeSwitcher />
-          {children}
+          <MainLayout>{children}</MainLayout>
         </NextThemeProvider>
       </body>
     </html>
