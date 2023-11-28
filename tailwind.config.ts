@@ -9,7 +9,10 @@ const config: Config = {
   theme: {
     colors: {
       cyan: '#c5fcff',
-      cyan500: '#003d40'
+      cyan500: '#003d40',
+      black: '#000',
+      white: '#fff',
+      grey: '#808080'
     }
   },
   plugins: []
