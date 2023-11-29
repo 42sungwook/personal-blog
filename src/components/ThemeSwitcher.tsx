@@ -1,8 +1,8 @@
 'use client'
 
 import { useTheme } from 'next-themes'
-import LightThemeButton from '../assets/sun.svg'
-import DarkThemeButton from '../assets/moon.svg'
+import LightThemeButton from '@/assets/sun.svg'
+import DarkThemeButton from '@/assets/moon.svg'
 import { useEffect, useState } from 'react'
 
 export function ThemeSwitcher() {

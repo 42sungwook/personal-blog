@@ -1,5 +1,5 @@
-import { ThemeSwitcher } from './ThemeSwitcher'
-import Logo from './Logo'
+import { ThemeSwitcher } from '@/components/ThemeSwitcher'
+import Logo from '@/components/Logo'
 
 export default function Header() {
   return (
