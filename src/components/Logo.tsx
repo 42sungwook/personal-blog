@@ -1,3 +1,12 @@
+import Link from 'next/link'
+
 export default function Logo() {
-  return <div className="flex justify-center items-center">Sungwook.io</div>
+  return (
+    <Link
+      className="flex justify-center items-center"
+      href="/"
+    >
+      Sungwook.io
+    </Link>
+  )
 }

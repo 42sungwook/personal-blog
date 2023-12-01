@@ -1,6 +1,5 @@
 'use client'
 
-import HomeIcon from '@/assets/home.svg'
 import AboutIcon from '@/assets/person.svg'
 import TechIcon from '@/assets/computer.svg'
 import LifeIcon from '@/assets/nightlife.svg'
@@ -13,23 +12,18 @@ export type NavRoute = {
 
 export const useNavRoutes = () => {
   const NAV_ROUTES: { [name: string]: NavRoute } = {
-    HOME: {
-      text: '홈',
-      path: '/',
-      icon: HomeIcon
-    },
     ABOUT: {
-      text: '소개',
+      text: 'About',
       path: '/About',
       icon: AboutIcon
     },
     TECH: {
-      text: '기술',
+      text: 'Tech',
       path: '/Tech',
       icon: TechIcon
     },
     LIFE: {
-      text: '일상',
+      text: 'Life',
       path: '/Life',
       icon: LifeIcon
     }
