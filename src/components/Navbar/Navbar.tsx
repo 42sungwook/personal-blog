@@ -5,7 +5,6 @@ import { useNavRoutes } from './useNavRoutes'
 
 export default function Navbar() {
   const NAV_ROUTES = useNavRoutes()
-  const isProfileOpen = localStorage.getItem('nav') === 'true'
 
   return (
     <>
