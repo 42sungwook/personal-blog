@@ -1,3 +1,5 @@
+const { withContentlayer } = require('next-contentlayer')
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   webpack: (config) => {
@@ -6,7 +8,9 @@ const nextConfig = {
       use: ['@svgr/webpack']
     })
     return config
-  }
+  },
+  reactStrictMode: true,
+  swcMinify: true
 }
 
-module.exports = nextConfig
+module.exports = withContentlayer(nextConfig)

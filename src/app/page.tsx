@@ -1,19 +1,11 @@
-import { getSortedPostsData } from 'lib/posts'
+import { type Post, allPosts } from 'contentlayer/generated'
 
 export default async function Home() {
-  const allPostsData = await getSortedPostsData()
-
   return (
     <div>
       <ul>
-        {allPostsData.map(({ id, date, title }) => (
-          <li key={id}>
-            {title}
-            <br />
-            {id}
-            <br />
-            {date}
-          </li>
+        {allPosts.map((post: Post) => (
+          <li key={post.title}></li>
         ))}
       </ul>
     </div>
